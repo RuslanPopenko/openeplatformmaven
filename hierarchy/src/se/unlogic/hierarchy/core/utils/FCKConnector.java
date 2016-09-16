@@ -164,10 +164,10 @@ public class FCKConnector {
 				responseStr = "<textarea>" + responseStr + "</textarea>";
 				res.setContentType("text/html");
 			} else {
-				res.setContentType("application/json;charset=ISO-8859-1");
+				res.setContentType("application/json;charset=UTF-8");
 			}
 
-			res.setCharacterEncoding("ISO-8859-1");
+			res.setCharacterEncoding("UTF-8");
 
 			PrintWriter pw = res.getWriter();
 			pw.print(responseStr);
@@ -686,11 +686,11 @@ public class FCKConnector {
 
 			if(file.exists()) {
 
-				res.setHeader("Content-type", "image/" + FileUtils.getFileExtension(file) + ";charset=ISO-8859-1");
+				res.setHeader("Content-type", "image/" + FileUtils.getFileExtension(file) + ";charset=UTF-8");
 				res.setHeader("Content-Transfer-Encoding", "Binary");
 				res.setHeader("Content-length", "" + file.length());
 				res.setHeader("Content-Disposition", "inline; filename=\"" + FileUtils.toValidHttpFilename(file.getName()) + "\"");
-				res.setCharacterEncoding("ISO-8859-1");
+				res.setCharacterEncoding("UTF-8");
 
 				this.sendFile(res, file, user);
 

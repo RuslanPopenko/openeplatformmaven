@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
+	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
 
 	<xsl:include href="GroupAdminModuleTemplates.xsl"/>
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/usergrouplist/UserGroupList.en.xsl"/>

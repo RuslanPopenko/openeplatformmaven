@@ -61,7 +61,7 @@ public class HTTPUtils {
 
 	public static void sendReponse(String output, String contentType, HttpServletResponse res) throws IOException {
 
-		sendReponse(output, contentType, "ISO-8859-1", res);
+		sendReponse(output, contentType, "UTF-8", res);
 	}
 
 	public static void sendReponse(String output, String contentType, String encoding, HttpServletResponse res) throws IOException {
@@ -75,7 +75,7 @@ public class HTTPUtils {
 
 	public static void sendReponse(InputStream inputStream, String contentType, HttpServletResponse res) throws IOException {
 
-		sendReponse(inputStream, contentType, "ISO-8859-1", res);
+		sendReponse(inputStream, contentType, "UTF-8", res);
 	}
 
 	public static void sendReponse(InputStream inputStream, String contentType, String encoding, HttpServletResponse res) throws IOException {

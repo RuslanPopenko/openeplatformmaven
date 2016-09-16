@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output method="html" indent="yes"/>
 	
@@ -15,11 +15,11 @@
 		<xsl:text disable-output-escaping="yes"><![CDATA[<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->]]></xsl:text>
 		
 			<head>
-				<meta http-equiv="Content-Type" content= "text/html; charset=ISO-8859-1" />
+				<meta http-equiv="Content-Type" content= "text/html; charset=UTF-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 				
 				<meta name="keywords" content="RIGES, Open e-Platform" />
-				<meta name="description" content="Open e-Platform är en e-tjänsteplattform utvecklad av RIGES-projektet" />
+				<meta name="description" content="Open e-Platform Ã¤r en e-tjÃ¤nsteplattform utvecklad av RIGES-projektet" />
 				
 				<title>
 					<xsl:if test="title">	
@@ -46,7 +46,7 @@
 				<script type="text/javascript" src="{/document/requestinfo/contextpath}/js/init-modernizr.js"></script>
 				
 				<xsl:text disable-output-escaping="yes"><![CDATA[<!--[if lt IE 7]>]]></xsl:text>
-					<p class="chromeframe">Du använder en <strong>gammal</strong> webbläsare. Vänligen <a href="http://browsehappy.com/">uppgradera din webbläsare</a> eller <a href="http://www.google.com/chromeframe/?redirect=true">aktivera Google Chrome Frame</a> för att förbättra upplevelsen.</p>
+					<p class="chromeframe">Du anvÃ¤nder en <strong>gammal</strong> webblÃ¤sare. VÃ¤nligen <a href="http://browsehappy.com/">uppgradera din webblÃ¤sare</a> eller <a href="http://www.google.com/chromeframe/?redirect=true">aktivera Google Chrome Frame</a> fÃ¶r att fÃ¶rbÃ¤ttra upplevelsen.</p>
 				<xsl:text disable-output-escaping="yes"><![CDATA[<![endif]-->]]></xsl:text>
 				
 				<xsl:apply-templates select="links/link"/>
@@ -94,7 +94,7 @@
 								<xsl:apply-templates select="menus/menu/menuitem[itemType='SECTION'][position() = 1]" mode="sections" />
 								
 								<xsl:if test="not(user)">
-									<li><a href="{/document/requestinfo/contextpath}/minasidor" title="Mina sidor">Mina sidor<i data-icon-before="u" title="Mina sidor kräver inloggning." class="vertical-align-middle"></i></a></li>
+									<li><a href="{/document/requestinfo/contextpath}/minasidor" title="Mina sidor">Mina sidor<i data-icon-before="u" title="Mina sidor krÃ¤ver inloggning." class="vertical-align-middle"></i></a></li>
 								</xsl:if>
 								
 								<xsl:apply-templates select="menus/menu/menuitem[itemType='SECTION'][position() > 1]" mode="sections" />
@@ -124,9 +124,9 @@
 						 								</a>
 													</li>
 													<li>
-						 								<a href="{/document/requestinfo/contextpath}/myorganizations" title="Mina företag">
+						 								<a href="{/document/requestinfo/contextpath}/myorganizations" title="Mina fÃ¶retag">
 						 									<span class="icon arrow"><i data-icon-before=">"></i></span>
-						 									<span class="text">Mina företag</span>
+						 									<span class="text">Mina fÃ¶retag</span>
 						 								</a>
 													</li>
 						 							<li class="bordered-link">

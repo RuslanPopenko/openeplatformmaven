@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
   <groupId>com.nordicpeak.flowengine</groupId>
   <artifactId>flowengine</artifactId>
   <version>1.2.1</version>
@@ -59,9 +59,14 @@
     </dependency>
     <dependency>
         <groupId>se.unlogic</groupId>
-        <artifactId>cron4jutils</artifactId>
+        <artifactId>log4jutils</artifactId>
         <version>1.2.4</version>
     </dependency>
+      <dependency>
+          <groupId>se.unlogic</groupId>
+          <artifactId>cron4jutils</artifactId>
+          <version>1.2.4</version>
+      </dependency>
     <dependency>
         <groupId>se.unlogic</groupId>
         <artifactId>hierarchy</artifactId>
@@ -72,6 +77,12 @@
         <artifactId>siteprofile</artifactId>
         <version>1.2.4</version>
     </dependency>
+      <dependency>
+          <groupId>it.sauronsoftware.cron4j</groupId>
+          <artifactId>cron4j</artifactId>
+          <version>2.2.5</version>
+      </dependency>
+
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -91,6 +102,7 @@
             <configuration>
                 <source>1.6</source>
                 <target>1.6</target>
+                <encoding>UTF-8</encoding>
             </configuration>
       </plugin>
     </plugins>

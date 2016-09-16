@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	version="1.0">
-	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" />
+	<xsl:output method="html" version="4.0" encoding="UTF-8" />
 
 	<xsl:template match="Document">
 
@@ -40,9 +40,9 @@
 						<span class="text" title="{description}">
 							<xsl:attribute name="data-icon-before">
 								<xsl:choose>
-									<xsl:when test="name = 'Mina ärenden'">&#58894;</xsl:when>
+									<xsl:when test="name = 'Mina Ã¤renden'">&#58894;</xsl:when>
 									<xsl:when test="name = 'Mina uppgifter'">u</xsl:when>
-									<xsl:when test="name = 'Mina företag'">b</xsl:when>
+									<xsl:when test="name = 'Mina fÃ¶retag'">b</xsl:when>
 									<xsl:otherwise>&gt;</xsl:otherwise>
 								</xsl:choose>
 							</xsl:attribute>

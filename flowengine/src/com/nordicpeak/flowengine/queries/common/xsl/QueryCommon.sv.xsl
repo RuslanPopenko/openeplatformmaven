@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
+	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
 	
 	<xsl:include href="QueryCommonTemplates.xsl"/>
 	
-	<xsl:variable name="i18n.Help">Hjälp</xsl:variable>
-	<xsl:variable name="i18n.UpdateQuery">Ändra</xsl:variable>
+	<xsl:variable name="i18n.Help">HjÃ¤lp</xsl:variable>
+	<xsl:variable name="i18n.UpdateQuery">Ã„ndra</xsl:variable>
 	
-	<xsl:variable name="i18n.FreeTextAlternativeToLong">Innehållet i fritextalternativfältet överskrider gränsen på 255 tecken!</xsl:variable>
-	<xsl:variable name="i18n.FreeTextAlternativeValueRequired">Du måste fylla i fältet för fritextalternativet!</xsl:variable>
+	<xsl:variable name="i18n.FreeTextAlternativeToLong">InnehÃ¥llet i fritextalternativfÃ¤ltet Ã¶verskrider grÃ¤nsen pÃ¥ 255 tecken!</xsl:variable>
+	<xsl:variable name="i18n.FreeTextAlternativeValueRequired">Du mÃ¥ste fylla i fÃ¤ltet fÃ¶r fritextalternativet!</xsl:variable>
 	
 </xsl:stylesheet>

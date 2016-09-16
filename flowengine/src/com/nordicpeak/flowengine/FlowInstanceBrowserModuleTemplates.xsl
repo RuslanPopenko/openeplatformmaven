@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
+	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
 
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/xsl/Common.xsl"/>
 
@@ -109,7 +109,7 @@
 						</xsl:if>
 	  				</div>
 	  				<div class="description">
-	  					<a class="btn btn-light btn-inline btn-readmore">LÄS MER</a>
+	  					<a class="btn btn-light btn-inline btn-readmore">LÃ„S MER</a>
 	  					<xsl:choose>
 	  						<xsl:when test="longDescription"><xsl:value-of select="longDescription" disable-output-escaping="yes" /></xsl:when>
 	  						<xsl:otherwise><xsl:value-of select="shortDescription" disable-output-escaping="yes" /></xsl:otherwise>

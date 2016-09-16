@@ -348,7 +348,7 @@ public class LoginProviderSelectorModule extends AnnotatedForegroundModule imple
 
 		if(redirectURI != null){
 
-			res.sendRedirect(this.getModuleURI(req) + "?redirect=" + URLEncoder.encode(redirectURI, "ISO-8859-1"));
+			res.sendRedirect(this.getModuleURI(req) + "?redirect=" + URLEncoder.encode(redirectURI, "UTF-8"));
 
 		}else{
 

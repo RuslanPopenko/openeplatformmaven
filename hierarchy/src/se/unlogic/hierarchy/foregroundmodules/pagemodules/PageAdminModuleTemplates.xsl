@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" />
+	<xsl:output method="html" version="4.0" encoding="UTF-8" />
 
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/xsl/Common.xsl" />
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/xsl/CKEditor.xsl" />
@@ -129,7 +129,7 @@
 		
 		<xsl:apply-templates select="validationException/validationError"/>
 		
-		<form method="post" action="{/document/requestinfo/uri}" accept-charset="ISO-8859-1">
+		<form method="post" action="{/document/requestinfo/uri}" accept-charset="UTF-8">
 			
 			<div class="floatleft full bigmarginbottom">
 				<table width="100%">
@@ -438,7 +438,7 @@
 		
 		<xsl:apply-templates select="validationException/validationError"/>
 		
-		<form method="post" action="{/document/requestinfo/uri}" accept-charset="ISO-8859-1">
+		<form method="post" action="{/document/requestinfo/uri}" accept-charset="UTF-8">
 			
 			<div class="floatleft full bigmarginbottom">
 				<table width="100%">

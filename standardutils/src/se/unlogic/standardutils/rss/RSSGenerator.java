@@ -141,6 +141,6 @@ public class RSSGenerator {
 
 	public String getStringRss(List<? extends RSSItem> items, String encoding) throws TransformerFactoryConfigurationError, TransformerException{
 
-		return XMLUtils.toString(this.getXmlRss(items), "ISO-8859-1", true);
+		return XMLUtils.toString(this.getXmlRss(items), "UTF-8", true);
 	}
 }

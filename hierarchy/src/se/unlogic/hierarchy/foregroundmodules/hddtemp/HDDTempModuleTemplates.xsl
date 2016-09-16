@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
+	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
 
 	<xsl:include href="../../core/utils/xsl/Common.xsl"/>
 
@@ -115,7 +115,7 @@
 							<td>
 								<xsl:choose>
 									<xsl:when test="Drive/driveState='OK'">
-										<xsl:value-of select="Drive/temp"/><xsl:text>°</xsl:text>
+										<xsl:value-of select="Drive/temp"/><xsl:text>Â°</xsl:text>
 									</xsl:when>
 									<xsl:when test="Drive/driveState='SLEEPING'">
 										<xsl:value-of select="$ServerDrive.DriveSleeping"/>

@@ -19,25 +19,25 @@ public class Drive implements Elementable{
 
 	@XMLElement
 	private Integer temp;
-	
+
 	@XMLElement
 	private String type;
-	
+
 	@XMLElement
 	private String device;
-	
+
 	@XMLElement
 	private DriveState driveState;
-	
+
 	public Drive(Integer temp, String type, String device)
 	{
 		this.temp = temp;
 		this.device = device;
 		this.type = type;
 	}
-	
+
 	public Drive(){}
-	
+
 	public Integer getTemp() {
 		return temp;
 	}
@@ -59,23 +59,23 @@ public class Drive implements Elementable{
 	@Override
 	public String toString() {
 
-		return device + " " + temp + "°" + "(" + type + ")";
+		return device + " " + temp + "Â°" + "(" + type + ")";
 	}
 
 	public Element toXML(Document doc) {
-		
+
 		return XMLGenerator.toXML(this, doc);
 	}
 
-	
+
 	public DriveState getDriveState() {
-	
+
 		return driveState;
 	}
 
-	
+
 	public void setDriveState(DriveState driveState) {
-	
+
 		this.driveState = driveState;
 	}
 }

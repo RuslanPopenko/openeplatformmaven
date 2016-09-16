@@ -397,7 +397,7 @@ public class BlogModule extends AnnotatedForegroundModule implements AccessInter
 					}
 				}
 
-				this.cachedFeedXML = this.rssGenerator.getStringRss(blogPosts, "ISO-8859-1");
+				this.cachedFeedXML = this.rssGenerator.getStringRss(blogPosts, "UTF-8");
 
 				return;
 			} catch (TransformerFactoryConfigurationError e) {

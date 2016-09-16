@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-	<xsl:output method="xml" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" indent="yes" encoding="ISO-8859-1"/>
+	<xsl:output method="xml" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" indent="yes" encoding="UTF-8"/>
 		
 	<xsl:template match="Document">
 		
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
-				<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-				<title>Ärendenummer #<xsl:value-of select="FlowInstance/flowInstanceID"/></title>
+				<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+				<title>Ã„rendenummer #<xsl:value-of select="FlowInstance/flowInstanceID"/></title>
 				<link rel="stylesheet" type="text/css" href="classpath://com/nordicpeak/flowengine/pdf/staticcontent/css/flowinstance.css" />
 				
 				<bookmarks>
@@ -18,7 +18,7 @@
 			<body>
 			
 				<div id="footer">
-					<xsl:text>Ärendenummer: #</xsl:text>
+					<xsl:text>Ã„rendenummer: #</xsl:text>
 					<xsl:value-of select="FlowInstance/flowInstanceID"/>
 					
 					<xsl:if test="FlowInstance/poster/user">
@@ -59,7 +59,7 @@
 							<xsl:value-of select="FlowInstance/Flow/name"/>
 						</h1>
 						<p>
-							<xsl:text>Ärendenummer: #</xsl:text>
+							<xsl:text>Ã„rendenummer: #</xsl:text>
 							<xsl:value-of select="FlowInstance/flowInstanceID"/>
 							
 							<xsl:if test="FlowInstance/poster/user">

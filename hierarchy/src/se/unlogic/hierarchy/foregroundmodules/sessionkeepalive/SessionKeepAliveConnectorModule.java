@@ -47,7 +47,7 @@ public class SessionKeepAliveConnectorModule extends AnnotatedForegroundModule {
 		log.info("Keep alive request from user " + user + " from address " + req.getRemoteAddr());
 
 		res.setContentType("text/html");
-		res.setCharacterEncoding("ISO-8859-1");
+		res.setCharacterEncoding("UTF-8");
 		res.getWriter().write(user != null ? "1" : "0");
 		res.getWriter().flush();
 

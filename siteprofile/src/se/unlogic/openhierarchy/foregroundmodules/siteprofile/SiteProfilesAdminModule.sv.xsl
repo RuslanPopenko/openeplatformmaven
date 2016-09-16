@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
+	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
 	
 	<xsl:include href="SiteProfilesAdminModuleTemplates.xsl"/>
 	
@@ -8,26 +8,26 @@
 	<xsl:variable name="i18n.NoProfilesFound">Inga profiler hittades</xsl:variable>
 	<xsl:variable name="i18n.Name">Namn</xsl:variable>
 	<xsl:variable name="i18n.Design">Design</xsl:variable>
-	<xsl:variable name="i18n.Domains">Domäner</xsl:variable>
-	<xsl:variable name="i18n.AddProfile">Lägg till profil</xsl:variable>
+	<xsl:variable name="i18n.Domains">DomÃ¤ner</xsl:variable>
+	<xsl:variable name="i18n.AddProfile">LÃ¤gg till profil</xsl:variable>
 	<xsl:variable name="i18n.UpdateProfile">Uppdatera profilen</xsl:variable>
 	<xsl:variable name="i18n.DeleteProfile">Ta bort profilen</xsl:variable>
-	<xsl:variable name="i18n.Add">Lägg till</xsl:variable>
-	<xsl:variable name="i18n.SaveChanges">Spara ändringar</xsl:variable>
-	<xsl:variable name="i18n.ChooseDesign">Välj design</xsl:variable>
-	<xsl:variable name="i18n.ValidationError.DomainAlreadyInUse.part1">Domänen </xsl:variable>
-	<xsl:variable name="i18n.ValidationError.DomainAlreadyInUse.part2"> används redan av profilen </xsl:variable>
+	<xsl:variable name="i18n.Add">LÃ¤gg till</xsl:variable>
+	<xsl:variable name="i18n.SaveChanges">Spara Ã¤ndringar</xsl:variable>
+	<xsl:variable name="i18n.ChooseDesign">VÃ¤lj design</xsl:variable>
+	<xsl:variable name="i18n.ValidationError.DomainAlreadyInUse.part1">DomÃ¤nen </xsl:variable>
+	<xsl:variable name="i18n.ValidationError.DomainAlreadyInUse.part2"> anvÃ¤nds redan av profilen </xsl:variable>
 	<xsl:variable name="i18n.ValidationError.DomainAlreadyInUse.part3">.</xsl:variable>
-	<xsl:variable name="i18n.UpdateGlobalSettings">Uppdatera globala inställningar</xsl:variable>
-	<xsl:variable name="i18n.ProfileSettings">Modul inställningar</xsl:variable>
+	<xsl:variable name="i18n.UpdateGlobalSettings">Uppdatera globala instÃ¤llningar</xsl:variable>
+	<xsl:variable name="i18n.ProfileSettings">Modul instÃ¤llningar</xsl:variable>
 	
 	
-	<xsl:variable name="i18n.ValidationError.RequiredField">Du måste fylla i fältet</xsl:variable>
-	<xsl:variable name="i18n.ValidationError.InvalidFormat">Felaktigt format på fältet</xsl:variable>
-	<xsl:variable name="i18n.ValidationError.TooLong">För långt värde på fältet</xsl:variable>
-	<xsl:variable name="i18n.ValidationError.TooShort">För kort värde på fältet</xsl:variable>
-	<xsl:variable name="i18n.ValidationError.UnknownValidationErrorType">Ett okänt fel har uppstått</xsl:variable>
-	<xsl:variable name="i18n.ValidationError.UnknownFault">Ett okänt fel har uppstått</xsl:variable>	
+	<xsl:variable name="i18n.ValidationError.RequiredField">Du mÃ¥ste fylla i fÃ¤ltet</xsl:variable>
+	<xsl:variable name="i18n.ValidationError.InvalidFormat">Felaktigt format pÃ¥ fÃ¤ltet</xsl:variable>
+	<xsl:variable name="i18n.ValidationError.TooLong">FÃ¶r lÃ¥ngt vÃ¤rde pÃ¥ fÃ¤ltet</xsl:variable>
+	<xsl:variable name="i18n.ValidationError.TooShort">FÃ¶r kort vÃ¤rde pÃ¥ fÃ¤ltet</xsl:variable>
+	<xsl:variable name="i18n.ValidationError.UnknownValidationErrorType">Ett okÃ¤nt fel har uppstÃ¥tt</xsl:variable>
+	<xsl:variable name="i18n.ValidationError.UnknownFault">Ett okÃ¤nt fel har uppstÃ¥tt</xsl:variable>	
 	
-	<xsl:variable name="i18n.NoSettingsFound">Inga inställningar hittades</xsl:variable>
+	<xsl:variable name="i18n.NoSettingsFound">Inga instÃ¤llningar hittades</xsl:variable>
 </xsl:stylesheet>

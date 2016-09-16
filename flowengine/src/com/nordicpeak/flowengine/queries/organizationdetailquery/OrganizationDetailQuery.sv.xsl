@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
+	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
 
 	<xsl:include href="classpath://com/nordicpeak/flowengine/queries/common/xsl/QueryCommon.sv.xsl"/>
 	<xsl:include href="OrganizationDetailQueryTemplates.xsl"/>
 	
-	<xsl:variable name="i18n.Name">Företagets namn</xsl:variable>
+	<xsl:variable name="i18n.Name">FÃ¶retagets namn</xsl:variable>
 	<xsl:variable name="i18n.OrganizationNumber">Organisationsnummer</xsl:variable>
 	<xsl:variable name="i18n.Address">Adress</xsl:variable>
 	<xsl:variable name="i18n.ZipCode">Postnummer</xsl:variable>
 	<xsl:variable name="i18n.PostalAddress">Ort</xsl:variable>
 	<xsl:variable name="i18n.ContactPerson">Kontaktperson</xsl:variable>
-	<xsl:variable name="i18n.Firstname">Förnamn</xsl:variable>
+	<xsl:variable name="i18n.Firstname">FÃ¶rnamn</xsl:variable>
 	<xsl:variable name="i18n.Lastname">Efternamn</xsl:variable>
-	<xsl:variable name="i18n.FirstnameAndLastname">För- &amp; Efternamn</xsl:variable>
+	<xsl:variable name="i18n.FirstnameAndLastname">FÃ¶r- &amp; Efternamn</xsl:variable>
 	<xsl:variable name="i18n.MobilePhone">Mobiltelefon</xsl:variable>
 	<xsl:variable name="i18n.Email">E-postadress</xsl:variable>
 	<xsl:variable name="i18n.Phone">Telefon</xsl:variable>
 	
-	<xsl:variable name="i18n.ChooseContactChannels">Kontaktvägar</xsl:variable>
+	<xsl:variable name="i18n.ChooseContactChannels">KontaktvÃ¤gar</xsl:variable>
 	
 	<xsl:variable name="i18n.AllowContactBySMS">Kontakta mig via SMS</xsl:variable>
 	<xsl:variable name="i18n.ContactBySMS">SMS</xsl:variable>
@@ -26,24 +26,24 @@
 	
 	<xsl:variable name="i18n.And">&amp;</xsl:variable>
 	
-	<xsl:variable name="i18n.ChooseOrganization">Välj företag</xsl:variable>
-	<xsl:variable name="i18n.OrganizationDescription">Välj ett av din befintliga företag eller registrera ett nytt</xsl:variable>
-	<xsl:variable name="i18n.NewOrganization">Nytt företag</xsl:variable>
+	<xsl:variable name="i18n.ChooseOrganization">VÃ¤lj fÃ¶retag</xsl:variable>
+	<xsl:variable name="i18n.OrganizationDescription">VÃ¤lj ett av din befintliga fÃ¶retag eller registrera ett nytt</xsl:variable>
+	<xsl:variable name="i18n.NewOrganization">Nytt fÃ¶retag</xsl:variable>
 	
-	<xsl:variable name="i18n.AddToMyOrganizations">Lägg till det här företagets uppgifter under mina företag</xsl:variable>
-	<xsl:variable name="i18n.UpdateToMyOrganizations">Uppdatera företagets uppgifter under mina företag</xsl:variable>
+	<xsl:variable name="i18n.AddToMyOrganizations">LÃ¤gg till det hÃ¤r fÃ¶retagets uppgifter under mina fÃ¶retag</xsl:variable>
+	<xsl:variable name="i18n.UpdateToMyOrganizations">Uppdatera fÃ¶retagets uppgifter under mina fÃ¶retag</xsl:variable>
 	
-	<xsl:variable name="i18n.UnableToPersistOrganization">Det gick inte att spara företagets uppgifter till mina företag. Försök igen</xsl:variable>
+	<xsl:variable name="i18n.UnableToPersistOrganization">Det gick inte att spara fÃ¶retagets uppgifter till mina fÃ¶retag. FÃ¶rsÃ¶k igen</xsl:variable>
 	
-	<xsl:variable name="i18n.NameExists">Du har redan registrerat ett företag med det angivna namnet</xsl:variable>
-	<xsl:variable name="i18n.OrganizationNumberExists">Du har redan registrerat ett företag med det angivna organisationsnumret</xsl:variable>
+	<xsl:variable name="i18n.NameExists">Du har redan registrerat ett fÃ¶retag med det angivna namnet</xsl:variable>
+	<xsl:variable name="i18n.OrganizationNumberExists">Du har redan registrerat ett fÃ¶retag med det angivna organisationsnumret</xsl:variable>
 	
-	<xsl:variable name="i18n.RequiredField">Det här fältet är obligatoriskt!</xsl:variable>
-	<xsl:variable name="i18n.TooLongFieldContent.part1">Innehållet i det här fältet är </xsl:variable>
-	<xsl:variable name="i18n.TooLongFieldContent.part2"> tecken vilket överskrider maxgränsen på </xsl:variable>
+	<xsl:variable name="i18n.RequiredField">Det hÃ¤r fÃ¤ltet Ã¤r obligatoriskt!</xsl:variable>
+	<xsl:variable name="i18n.TooLongFieldContent.part1">InnehÃ¥llet i det hÃ¤r fÃ¤ltet Ã¤r </xsl:variable>
+	<xsl:variable name="i18n.TooLongFieldContent.part2"> tecken vilket Ã¶verskrider maxgrÃ¤nsen pÃ¥ </xsl:variable>
 	<xsl:variable name="i18n.TooLongFieldContent.part3"> tecken!</xsl:variable>
-	<xsl:variable name="i18n.InvalidFormat">Felaktigt format på fältet</xsl:variable>
-	<xsl:variable name="i18n.UnknownValidationError">Ett okänt valideringsfel har uppstått!</xsl:variable>
-	<xsl:variable name="i18n.NoContactChannelChoosen">Du måste välja minst ett kontaktsätt!</xsl:variable>
+	<xsl:variable name="i18n.InvalidFormat">Felaktigt format pÃ¥ fÃ¤ltet</xsl:variable>
+	<xsl:variable name="i18n.UnknownValidationError">Ett okÃ¤nt valideringsfel har uppstÃ¥tt!</xsl:variable>
+	<xsl:variable name="i18n.NoContactChannelChoosen">Du mÃ¥ste vÃ¤lja minst ett kontaktsÃ¤tt!</xsl:variable>
 	
 </xsl:stylesheet>

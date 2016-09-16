@@ -25,9 +25,9 @@ import se.unlogic.standardutils.streams.StreamUtils;
 
 /**
  * Utility class for handling files and folders
- * 
+ *
  * @author Robert "Unlogic" Olofsson (unlogic@unlogic.se)
- * 
+ *
  */
 public class FileUtils {
 
@@ -38,7 +38,7 @@ public class FileUtils {
 
 	public static String toValidHttpFilename(String string) {
 
-		return string.replaceAll("[^0-9a-öA-Ö-+. ()-+!@é&%$§=]|[~]", "_");
+		return string.replaceAll("[^0-9a-Ã¶A-Ã–-+. ()-+!@Ã©&%$Â§=]|[~]", "_");
 	}
 
 	public final static byte[] getRawBytes(File f) throws IOException {
@@ -69,10 +69,10 @@ public class FileUtils {
 	public static boolean fileExists(String path) {
 
 		if(path == null){
-			
+
 			return false;
 		}
-		
+
 		File file = new File(path);
 
 		return file.exists();
@@ -94,7 +94,7 @@ public class FileUtils {
 
 	/**
 	 * Removes all files in the given directory matching the given filter
-	 * 
+	 *
 	 * @param directory the directory to be cleared
 	 * @param filter {@link FileFilter} used to filter files
 	 * @param recursive controls weather files should be deleted from sub directories too

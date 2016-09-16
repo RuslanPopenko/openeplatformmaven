@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" />
+	<xsl:output method="html" version="4.0" encoding="UTF-8" />
 
 	<xsl:include href="LoginModuleTemplates.xsl" />
 	
@@ -9,21 +9,21 @@
 	<xsl:variable name="Login.header" select="'Inloggning'" />
 	
 	<xsl:variable name="AccountDisabled.header" select="'Inloggning'" />
-	<xsl:variable name="AccountDisabled.text" select="'Ditt konto är avstängt, kontakta systemadministratören för mer information.'" />
+	<xsl:variable name="AccountDisabled.text" select="'Ditt konto Ã¤r avstÃ¤ngt, kontakta systemadministratÃ¶ren fÃ¶r mer information.'" />
 	
 	<xsl:variable name="LoginFailed.header" select="'Inloggning'" />
-	<xsl:variable name="LoginFailed.text" select="'Felaktigt användarnamn eller lösenord!'" />
+	<xsl:variable name="LoginFailed.text" select="'Felaktigt anvÃ¤ndarnamn eller lÃ¶senord!'" />
 	
 	<xsl:variable name="AccountLocked.header" select="'Inloggning'" />
-	<xsl:variable name="AccountLocked.text.part1" select="'Kontot är låst i '" />
-	<xsl:variable name="AccountLocked.text.part2" select="' minuter p.g.a för många felaktiga inloggningsförsök!'" />
+	<xsl:variable name="AccountLocked.text.part1" select="'Kontot Ã¤r lÃ¥st i '" />
+	<xsl:variable name="AccountLocked.text.part2" select="' minuter p.g.a fÃ¶r mÃ¥nga felaktiga inloggningsfÃ¶rsÃ¶k!'" />
 	
-	<xsl:variable name="LoginForm.username" select="'Användarnamn'" />
-	<xsl:variable name="LoginForm.password" select="'Lösenord'" />
+	<xsl:variable name="LoginForm.username" select="'AnvÃ¤ndarnamn'" />
+	<xsl:variable name="LoginForm.password" select="'LÃ¶senord'" />
 	<xsl:variable name="LoginForm.submit" select="'Logga in'" />
 	
-	<xsl:variable name="requestNewPassword" select="'Begär nytt lösenord'" />
-	<xsl:variable name="createNewAccount" select="'Skapa ett användarkonto'" />
+	<xsl:variable name="requestNewPassword" select="'BegÃ¤r nytt lÃ¶senord'" />
+	<xsl:variable name="createNewAccount" select="'Skapa ett anvÃ¤ndarkonto'" />
 	
 	
 </xsl:stylesheet>

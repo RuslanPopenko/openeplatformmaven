@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
+	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
 
 	<xsl:include href="DummyPaymentProviderTemplates.xsl"/>
 	
 	<xsl:variable name="i18n.PaymentFailedTitle">Betalning misslyckades</xsl:variable>
-	<xsl:variable name="i18n.PaymentFailed">Ett fel inträffade då du skulle betala ansökan, försök igen!</xsl:variable>
+	<xsl:variable name="i18n.PaymentFailed">Ett fel intrÃ¤ffade dÃ¥ du skulle betala ansÃ¶kan, fÃ¶rsÃ¶k igen!</xsl:variable>
 	
 	<xsl:variable name="i18n.Payment">Betalning</xsl:variable>
-	<xsl:variable name="i18n.PaymentDescription">Nedan ser du en sammanställning på kostnaderna som din ansökan medför</xsl:variable>
-	<xsl:variable name="i18n.ChoosePayment">Välj hur du vill betala</xsl:variable>
+	<xsl:variable name="i18n.PaymentDescription">Nedan ser du en sammanstÃ¤llning pÃ¥ kostnaderna som din ansÃ¶kan medfÃ¶r</xsl:variable>
+	<xsl:variable name="i18n.ChoosePayment">VÃ¤lj hur du vill betala</xsl:variable>
 	
 	<xsl:variable name="i18n.CreditCard">Kreditkort</xsl:variable>
 	<xsl:variable name="i18n.Invoice">Faktura</xsl:variable>
@@ -23,6 +23,6 @@
 	<xsl:variable name="i18n.Total">Totalt</xsl:variable>
 	<xsl:variable name="i18n.TotalSum">SUMMA ATT BETALA</xsl:variable>
 	
-	<xsl:variable name="i18n.UnknownValidationError">Ett okänt valideringsfel har uppstått!</xsl:variable>
+	<xsl:variable name="i18n.UnknownValidationError">Ett okÃ¤nt valideringsfel har uppstÃ¥tt!</xsl:variable>
 	
 </xsl:stylesheet>
