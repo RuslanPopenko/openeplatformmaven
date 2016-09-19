@@ -11,6 +11,7 @@
       <module>webutils</module>
       <module>emailutils</module>
       <module>log4jutils</module>
+      <module>cron4jutils</module>
       <module>purecaptcha</module>
       <module>fileuploadutils</module>
       <module>hierarchy</module>
@@ -20,6 +21,10 @@
       <module>standardflownotificationhandler</module>
       <module>demo.oeplatform.org</module>
   </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
   
   <build>
     <pluginManagement>
@@ -31,6 +36,7 @@
             <configuration>
                 <source>1.6</source>
                 <target>1.6</target>
+                <encoding>UTF-8</encoding>
             </configuration>
         </plugin>
   	</plugins>
