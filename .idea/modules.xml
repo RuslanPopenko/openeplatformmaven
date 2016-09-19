@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo.oeplatform.org.iml" filepath="$PROJECT_DIR$/demo.oeplatform.org.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emailutils.iml" filepath="$PROJECT_DIR$/emailutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileuploadutils.iml" filepath="$PROJECT_DIR$/fileuploadutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowengine.iml" filepath="$PROJECT_DIR$/flowengine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowinstancepdfgenerator.iml" filepath="$PROJECT_DIR$/flowinstancepdfgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hierarchy.iml" filepath="$PROJECT_DIR$/hierarchy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log4jutils.iml" filepath="$PROJECT_DIR$/log4jutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oeplatform.iml" filepath="$PROJECT_DIR$/oeplatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/purecaptcha.iml" filepath="$PROJECT_DIR$/purecaptcha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/siteprofile.iml" filepath="$PROJECT_DIR$/siteprofile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/standardflownotificationhandler.iml" filepath="$PROJECT_DIR$/standardflownotificationhandler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/standardutils.iml" filepath="$PROJECT_DIR$/standardutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webutils.iml" filepath="$PROJECT_DIR$/webutils.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,10 +1,3 @@
-/*******************************************************************************
- * Copyright (c) 2010 Robert "Unlogic" Olofsson (unlogic@unlogic.se).
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the GNU Lesser Public License v3
- * which accompanies this distribution, and is available at
- * http://www.gnu.org/licenses/lgpl-3.0-standalone.html
- ******************************************************************************/
 package se.unlogic.standardutils.i18n;
 
 import org.w3c.dom.Document;
@@ -121,7 +114,7 @@ public enum Language {
 	Mongolian("mn"),
 	Nauru("na"),
 	Navajo_Navaho("nv"),
-	Norwegian_Bokmål("nb"),
+	Norwegian_BokmÃ¥l("nb"),
 	North_Ndebele("nd"),
 	Nepali("ne"),
 	Ndonga("ng"),
@@ -186,7 +179,7 @@ public enum Language {
 	Uzbek("uz"),
 	Venda("ve"),
 	Vietnamese("vi"),
-	Volapük("vo"),
+	VolapÃ¼k("vo"),
 	Walloon("wa"),
 	Welsh("cy"),
 	Wolof("wo"),
@@ -218,7 +211,7 @@ public enum Language {
 
 	/**
 	 * Returns the Language from its corresponding language code
-	 * 
+	 *
 	 * @param code
 	 * @return Language
 	 */
@@ -237,17 +230,17 @@ public enum Language {
 		Element languageElement = doc.createElement("language");
 		Element nameElement = doc.createElement("name");
 		nameElement.setTextContent(this.name());
-		
+
 		Element codeElement = doc.createElement("code");
 		codeElement.setTextContent(this.code);
-		
+
 		Element localNameElement = doc.createElement("localName");
 		localNameElement.setTextContent(this.localName == null ? this.name() : this.localName);
-		
+
 		languageElement.appendChild(nameElement);
 		languageElement.appendChild(codeElement);
 		languageElement.appendChild(localNameElement);
-		
+
 		return languageElement;
 	}
 }

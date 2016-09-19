@@ -1,0 +1,11 @@
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/interfaces/SiteProfile.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/FallbackSettingHandler.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/interfaces/SiteProfileHandler.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/SiteProfileHTMLBackgroundModule.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/beans/ProfileSettingValue.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/SiteProfilesAdminModule.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/beans/GlobalSettingValue.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/ProfileCRUD.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/validationerrors/DomainAlreadyInUseValidationError.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/beans/Profile.class
+se/unlogic/openhierarchy/foregroundmodules/siteprofile/interfaces/SiteProfileSettingProvider.class

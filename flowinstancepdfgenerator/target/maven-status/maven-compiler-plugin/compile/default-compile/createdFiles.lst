@@ -1,0 +1,5 @@
+com/nordicpeak/flowengine/pdf/StreamPdfFileSpecification.class
+com/nordicpeak/flowengine/pdf/PDFGeneratorModule$FlowInstanceCRUDEventListener.class
+com/nordicpeak/flowengine/pdf/ResourceLoaderAgent.class
+com/nordicpeak/flowengine/pdf/PDFGeneratorModule.class
+com/nordicpeak/flowengine/pdf/PDFGeneratorModule$SubmitEventListener.class

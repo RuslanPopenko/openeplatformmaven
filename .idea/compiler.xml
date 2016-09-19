@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="demo.oeplatform.org" />
+        <module name="emailutils" />
+        <module name="fileuploadutils" />
+        <module name="flowengine" />
+        <module name="flowinstancepdfgenerator" />
+        <module name="hierarchy" />
+        <module name="log4jutils" />
+        <module name="purecaptcha" />
+        <module name="siteprofile" />
+        <module name="standardflownotificationhandler" />
+        <module name="standardutils" />
+        <module name="webutils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo.oeplatform.org" target="1.6" />
+      <module name="emailutils" target="1.6" />
+      <module name="fileuploadutils" target="1.6" />
+      <module name="flowengine" target="1.6" />
+      <module name="flowinstancepdfgenerator" target="1.6" />
+      <module name="hierarchy" target="1.8" />
+      <module name="log4jutils" target="1.6" />
+      <module name="oeplatform" target="1.5" />
+      <module name="purecaptcha" target="1.6" />
+      <module name="siteprofile" target="1.6" />
+      <module name="standardflownotificationhandler" target="1.6" />
+      <module name="standardutils" target="1.6" />
+      <module name="webutils" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

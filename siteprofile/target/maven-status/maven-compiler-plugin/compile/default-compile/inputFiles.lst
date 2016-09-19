@@ -1,0 +1,11 @@
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/interfaces/SiteProfileHandler.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/beans/GlobalSettingValue.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/interfaces/SiteProfileSettingProvider.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/SiteProfilesAdminModule.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/beans/ProfileSettingValue.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/ProfileCRUD.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/interfaces/SiteProfile.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/FallbackSettingHandler.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/beans/Profile.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/validationerrors/DomainAlreadyInUseValidationError.java
+/home/ruslan/IdeaProject/OEPmaven/siteprofile/src/se/unlogic/openhierarchy/foregroundmodules/siteprofile/SiteProfileHTMLBackgroundModule.java

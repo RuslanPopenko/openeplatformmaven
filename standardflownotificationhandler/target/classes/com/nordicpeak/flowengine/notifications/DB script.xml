@@ -1,0 +1,48 @@
+<DBScripts>
+	<Script version="1">
+		<Query>
+			<![CDATA[
+				CREATE TABLE `flow_familiy_notification_settings` (
+				  `flowFamilyID` INTEGER UNSIGNED NOT NULL,
+				  `sendStatusChangedUserSMS` BOOLEAN NOT NULL,
+				  `sendExternalMessageReceivedUserSMS` BOOLEAN NOT NULL,
+				  `sendFlowInstanceSubmittedUserSMS` BOOLEAN NOT NULL,
+				  `sendFlowInstanceArchivedUserSMS` BOOLEAN NOT NULL,
+				  `sendStatusChangedUserEmail` BOOLEAN NOT NULL,
+				  `sendExternalMessageReceivedUserEmail` BOOLEAN NOT NULL,
+				  `sendFlowInstanceSubmittedUserEmail` BOOLEAN NOT NULL,
+				  `sendFlowInstanceArchivedUserEmail` BOOLEAN NOT NULL,
+				  `flowInstanceSubmittedUserEmailSubject` VARCHAR(255),
+				  `flowInstanceSubmittedUserEmailMessage` TEXT,
+				  `flowInstanceArchivedUserEmailSubject` VARCHAR(255),
+				  `flowInstanceArchivedUserEmailMessage` TEXT,
+				  `sendExternalMessageReceivedManagerEmail` BOOLEAN NOT NULL,
+				  `sendFlowInstanceAssignedManagerEmail` BOOLEAN NOT NULL,
+				  `sendStatusChangedManagerEmail` BOOLEAN NOT NULL,
+				  `sendFlowInstanceSubmittedManagerEmail` BOOLEAN NOT NULL,
+				  `flowInstanceSubmittedManagerEmailAddress` VARCHAR(255),
+				  PRIMARY KEY (`flowFamilyID`)
+				)
+				ENGINE = InnoDB;
+			]]>
+		</Query>		
+	</Script>
+	
+	<Script version="2">
+		<Query>
+			<![CDATA[
+				ALTER TABLE `flow_familiy_notification_settings` DROP COLUMN `flowInstanceSubmittedManagerEmailAddress`,
+				 ADD COLUMN `sendFlowInstanceSubmittedGlobalEmail` BOOLEAN NOT NULL AFTER `sendFlowInstanceSubmittedManagerEmail`,
+				 ADD COLUMN `flowInstanceSubmittedGlobalEmailAddress` VARCHAR(255) AFTER `sendFlowInstanceSubmittedGlobalEmail`;
+			]]>
+		</Query>		
+	</Script>
+	
+	<Script version="3">
+		<Query>
+			<![CDATA[
+				ALTER TABLE `flow_familiy_notification_settings` ADD COLUMN `flowInstanceSubmittedGlobalEmailAttachPDF` BOOLEAN NOT NULL AFTER `flowInstanceSubmittedGlobalEmailAddress`;
+			]]>
+		</Query>		
+	</Script>	
+</DBScripts>

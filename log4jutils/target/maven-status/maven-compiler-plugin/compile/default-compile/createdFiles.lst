@@ -1,0 +1,10 @@
+se/unlogic/log4jutils/logging/ThrottledSMTPAppender.class
+se/unlogic/log4jutils/logging/RelativeRollingFileAppender.class
+se/unlogic/log4jutils/logging/AllTriggeringEventEvaluator.class
+se/unlogic/log4jutils/logging/RelativePathNameNotSetException.class
+se/unlogic/log4jutils/logging/SMTPAppender$1.class
+se/unlogic/log4jutils/logging/RelativePathHandler.class
+se/unlogic/log4jutils/levels/LogLevel.class
+se/unlogic/log4jutils/logging/RelativePathNotSetException.class
+se/unlogic/log4jutils/logging/RelativeFileAppender.class
+se/unlogic/log4jutils/logging/SMTPAppender.class
