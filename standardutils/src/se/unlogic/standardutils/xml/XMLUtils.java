@@ -443,10 +443,10 @@ public class XMLUtils {
 			string = "_" + string.substring(1);
 		}
 
-		string = string.replaceAll("[Ã¥Ã¤]", "a");
-		string = string.replaceAll("[Ã…Ã„]", "A");
-		string = string.replace("Ã¶", "o");
-		string = string.replace("Ã–", "O");
+		string = string.replaceAll("[åä]", "a");
+		string = string.replaceAll("[ÅÄ]", "A");
+		string = string.replace("ö", "o");
+		string = string.replace("Ö", "O");
 
 		return string.replaceAll("[^0-9a-zA-Z-.]", "_");
 	}

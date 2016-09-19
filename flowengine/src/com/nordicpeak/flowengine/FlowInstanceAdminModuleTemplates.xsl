@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/xsl/Common.xsl"/>
 
@@ -1028,7 +1028,7 @@
 							<xsl:with-param name="user" select="$message/poster" />
 						</xsl:call-template>
 					</i>
-				 	<span class="time"><xsl:text>&#160;Â·&#160;</xsl:text><xsl:value-of select="$message/added" /></span>
+				 	<span class="time"><xsl:text>&#160;·&#160;</xsl:text><xsl:value-of select="$message/added" /></span>
 				 </span>
 				 <xsl:if test="$attachments">
 					<div class="files">

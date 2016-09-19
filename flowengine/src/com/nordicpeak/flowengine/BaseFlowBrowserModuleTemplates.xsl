@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 
 	<xsl:template match="validationError[messageKey='FlowNoLongerAvailable']">
 	
@@ -125,7 +125,7 @@
 		  					<xsl:value-of select="$i18n.overview"/>
 		  				</xsl:when>
 		  				<xsl:when test="$view = 'PREVIEW'">
-		  					<xsl:attribute name="data-icon-before">Ã³</xsl:attribute>
+		  					<xsl:attribute name="data-icon-before">ó</xsl:attribute>
 		  					<xsl:value-of select="$i18n.showInstance"/>
 		  				</xsl:when>
 		  				<xsl:when test="$view = 'FLOWINSTANCE'">
@@ -145,7 +145,7 @@
 		  		<li>
 		  			<a href="{/Document/requestinfo/currentURI}/{/Document/module/alias}/preview/{$flowInstance/flowInstanceID}" class="btn btn-light">
 						<xsl:if test="$view = 'PREVIEW'"><xsl:attribute name="class">btn btn-light active</xsl:attribute></xsl:if>
-						<span data-icon-before="Ã³"><xsl:value-of select="$i18n.showInstance"/></span>
+						<span data-icon-before="ó"><xsl:value-of select="$i18n.showInstance"/></span>
 					</a>
 		  		</li>
 		  		<xsl:if test="$flowInstance/Status/isUserMutable = 'true'">

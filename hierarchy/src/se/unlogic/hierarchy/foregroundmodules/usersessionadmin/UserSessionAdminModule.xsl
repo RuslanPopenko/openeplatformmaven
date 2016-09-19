@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 	<xsl:template match="Document">			
 		<xsl:apply-templates select="LoggedInUsers"/>
 	</xsl:template>
@@ -25,7 +25,7 @@
 					<xsl:apply-templates select="user"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<p>Inga inloggade anvÃ¤ndare hittades</p>
+					<p>Inga inloggade användare hittades</p>
 				</xsl:otherwise>
 			</xsl:choose>
 		</div>
@@ -35,7 +35,7 @@
 		
 		<div class="floatleft border full marginbottom">
 			<div class="floatleft">
-				<a href="javascript:hideShow({position()})" title="Visa/dÃ¶lj information om anvÃ¤ndaren {firstname} {lastname}">
+				<a href="javascript:hideShow({position()})" title="Visa/dölj information om användaren {firstname} {lastname}">
 					<img class="alignbottom" src="{/Document/requestinfo/contextpath}/static/f/{/Document/module/sectionID}/{/Document/module/moduleID}/pics/user.png"/>
 					
 					<xsl:text>&#x20;</xsl:text>
@@ -56,12 +56,12 @@
 			<div class="floatright">
 				<xsl:choose>
 					<xsl:when test="SessionInfo/SessionID">
-						<a href="{/Document/requestinfo/currentURI}/{/Document/module/alias}/logoutUser/{userID}/{SessionInfo/SessionID}" title="Logga ut anvÃ¤ndaren {firstname} {lastname}">
+						<a href="{/Document/requestinfo/currentURI}/{/Document/module/alias}/logoutUser/{userID}/{SessionInfo/SessionID}" title="Logga ut användaren {firstname} {lastname}">
 							<img class="alignbottom marginright" src="{/Document/requestinfo/contextpath}/static/f/{/Document/module/sectionID}/{/Document/module/moduleID}/pics/door.gif"/>
 						</a>					
 					</xsl:when>
 					<xsl:otherwise>
-						<img class="alignbottom marginright" src="{/Document/requestinfo/contextpath}/static/f/{/Document/module/sectionID}/{/Document/module/moduleID}/pics/door_disabled.gif" alt="Det gÃ¥r inte logga ut denna anvÃ¤ndare dÃ¥ dess session inte Ã¤r Ã¥tkomlig"/>
+						<img class="alignbottom marginright" src="{/Document/requestinfo/contextpath}/static/f/{/Document/module/sectionID}/{/Document/module/moduleID}/pics/door_disabled.gif" alt="Det går inte logga ut denna användare då dess session inte är åtkomlig"/>
 					</xsl:otherwise>
 				</xsl:choose>			
 			</div>
@@ -80,7 +80,7 @@
 							<td><xsl:value-of select="SessionInfo/CreationTime"/></td>
 						</tr>
 						<tr>
-							<td>Senaste Ã¥tkomst:</td>
+							<td>Senaste åtkomst:</td>
 							<td><xsl:value-of select="SessionInfo/LastAccessedTime"/></td>
 						</tr>
 						<tr>
@@ -90,15 +90,15 @@
 					</table>				
 				</xsl:if>
 				
-				<h4>AnvÃ¤ndar information</h4>
+				<h4>Användar information</h4>
 				
 				<table>	
 					<tr>
-						<td>AnvÃ¤ndarID:</td>
+						<td>AnvändarID:</td>
 						<td><xsl:value-of select="userID"/></td>
 					</tr>					
 					<tr>
-						<td>FÃ¶rnamn:</td>
+						<td>Förnamn:</td>
 						<td><xsl:value-of select="firstname"/></td>
 					</tr>
 					<tr>
@@ -106,7 +106,7 @@
 						<td><xsl:value-of select="lastname"/></td>
 					</tr>
 					<tr>
-						<td>AnvÃ¤ndarnamn:</td>
+						<td>Användarnamn:</td>
 						<td><xsl:value-of select="username"/></td>
 					</tr>
 					<tr>
@@ -114,7 +114,7 @@
 						<td><xsl:value-of select="email"/></td>
 					</tr>
 					<tr>
-						<td>AdministratÃ¶r:</td>
+						<td>Administratör:</td>
 						<td>
 							<input type="checkbox" name="admin">
 								<xsl:attribute name="disabled"/>
@@ -144,7 +144,7 @@
 						<td><xsl:value-of select="currentLogin"/></td>
 					</tr>
 					<tr>
-						<td>FÃ¶regÃ¥ende inloggning:</td>
+						<td>Föregående inloggning:</td>
 						<td><xsl:value-of select="lastLogin"/></td>
 					</tr>																																																	
 				</table>							

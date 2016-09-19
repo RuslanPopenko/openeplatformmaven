@@ -94,7 +94,7 @@ public abstract class BaseModalRegistrationModule<UserType extends MutableUser> 
 				if(Boolean.valueOf(req.getParameter("onlymodulehtml"))){
 				
 					res.setContentType("text/html");
-					res.setCharacterEncoding("UTF-8");
+					res.setCharacterEncoding("ISO-8859-1");
 					res.getWriter().write("1");
 					res.getWriter().flush();
 				}

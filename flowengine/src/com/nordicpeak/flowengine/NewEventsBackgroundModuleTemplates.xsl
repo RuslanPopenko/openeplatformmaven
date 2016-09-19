@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 
 	<xsl:variable name="globalscripts">
 		/jquery/jquery.js
@@ -61,7 +61,7 @@
 							</xsl:choose>
 							<span class="author">
 								<xsl:value-of select="poster/user/firstname" /><xsl:text>&#160;</xsl:text><xsl:value-of select="poster/user/lastname" />
-								<xsl:text>&#160;Â·&#160;</xsl:text><xsl:value-of select="added" />
+								<xsl:text>&#160;·&#160;</xsl:text><xsl:value-of select="added" />
 							</span>
 						</div>
 					</xsl:for-each>

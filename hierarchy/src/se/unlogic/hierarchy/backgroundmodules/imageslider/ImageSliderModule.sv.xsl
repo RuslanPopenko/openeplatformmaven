@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8" />
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" />
 
 	<xsl:include href="ImageSliderModuleTemplates.xsl" />
 	
@@ -18,11 +18,11 @@
 </div>
 <div class="nivo-html-caption" id="htmlcaption">
 	<h3>Aktiviteter</h3>
-	<p>KartlÃ¤gger och kvalificerar individers kunskap, fÃ¤rdigheter och kompetenser i anslutning till aktiviteter ute pÃ¥ arbetsplatser</p>
+	<p>Kartlägger och kvalificerar individers kunskap, färdigheter och kompetenser i anslutning till aktiviteter ute på arbetsplatser</p>
 </div>
 <div class="nivo-html-caption" id="htmlcaption2">
-	<h3>LÃ¤randeresultat</h3>
-	<p>UtgÃ¥r inte bara frÃ¥n individens formella betyg utan beaktar hela det samlade lÃ¤randeresultatet</p>
+	<h3>Läranderesultat</h3>
+	<p>Utgår inte bara från individens formella betyg utan beaktar hela det samlade läranderesultatet</p>
 </div>
 ]]>
 	</xsl:variable>

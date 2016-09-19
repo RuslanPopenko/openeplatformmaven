@@ -224,7 +224,7 @@ public class UserAdminModule extends AnnotatedForegroundModule implements UserFo
 
 		log.info("User " + user + " requesting email list of all users");
 
-		res.setCharacterEncoding("UTF-8");
+		res.setCharacterEncoding("ISO-8859-1");
 		res.setContentType("text/plain");
 		res.setHeader("Content-Disposition", "attachment; filename=\"email-list.txt\"");
 		res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");

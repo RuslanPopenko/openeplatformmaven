@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 
 	<xsl:include href="HDDTempModuleTemplates.xsl"/>
 
 	<xsl:variable name="defaultTemperatureEmailSubject">Temperature alarm for drive $drive.device in server $server.name!</xsl:variable>
-	<xsl:variable name="defaultTemperatureEmailMessage">Temperature $driveTemp.tempÂ° detected for drive $drive.device in $server.name ($server.host)!
+	<xsl:variable name="defaultTemperatureEmailMessage">Temperature $driveTemp.temp° detected for drive $drive.device in $server.name ($server.host)!
 
-The max allowed temperature for this drive is: $drive.maxTempÂ°
-The min allowed temperature for this drive is: $drive.minTempÂ°
+The max allowed temperature for this drive is: $drive.maxTemp°
+The min allowed temperature for this drive is: $drive.minTemp°
 
 No further warnings will be sent for this drive until you reset the alarms in the HDD temp module.
 

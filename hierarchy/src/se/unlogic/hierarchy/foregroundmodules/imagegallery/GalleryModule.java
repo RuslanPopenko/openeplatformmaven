@@ -609,7 +609,7 @@ public class GalleryModule extends AnnotatedForegroundModule implements AccessIn
 					}
 				}
 
-				// check if user wantÂ´s to show all comments or not
+				// check if user want´s to show all comments or not
 				Boolean showAll = (Boolean) session.getAttribute(this.moduleDescriptor.getModuleID() + ".showAll");
 				if (showAll == null || showAll) {
 					commentsElement.appendChild(XMLUtils.createElement("showAll", "true", doc));

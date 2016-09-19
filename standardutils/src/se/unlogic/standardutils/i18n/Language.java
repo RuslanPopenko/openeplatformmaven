@@ -121,7 +121,7 @@ public enum Language {
 	Mongolian("mn"),
 	Nauru("na"),
 	Navajo_Navaho("nv"),
-	Norwegian_BokmÃ¥l("nb"),
+	Norwegian_Bokmål("nb"),
 	North_Ndebele("nd"),
 	Nepali("ne"),
 	Ndonga("ng"),
@@ -186,7 +186,7 @@ public enum Language {
 	Uzbek("uz"),
 	Venda("ve"),
 	Vietnamese("vi"),
-	VolapÃ¼k("vo"),
+	Volapük("vo"),
 	Walloon("wa"),
 	Welsh("cy"),
 	Wolof("wo"),
@@ -218,7 +218,7 @@ public enum Language {
 
 	/**
 	 * Returns the Language from its corresponding language code
-	 *
+	 * 
 	 * @param code
 	 * @return Language
 	 */
@@ -237,17 +237,17 @@ public enum Language {
 		Element languageElement = doc.createElement("language");
 		Element nameElement = doc.createElement("name");
 		nameElement.setTextContent(this.name());
-
+		
 		Element codeElement = doc.createElement("code");
 		codeElement.setTextContent(this.code);
-
+		
 		Element localNameElement = doc.createElement("localName");
 		localNameElement.setTextContent(this.localName == null ? this.name() : this.localName);
-
+		
 		languageElement.appendChild(nameElement);
 		languageElement.appendChild(codeElement);
 		languageElement.appendChild(localNameElement);
-
+		
 		return languageElement;
 	}
 }

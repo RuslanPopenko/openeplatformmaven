@@ -195,17 +195,17 @@ public class ModalLoginModule extends UserProviderLoginModule {
 
 			if(referer == null || !referer.startsWith(RequestUtils.getFullContextPathURL(req))){
 
-				res.sendRedirect(this.getModuleURI(req) + "?redirect=" + URLEncoder.encode(redirectURI,"UTF-8") + "#clear");
+				res.sendRedirect(this.getModuleURI(req) + "?redirect=" + URLEncoder.encode(redirectURI,"ISO-8859-1") + "#clear");
 
 			}else if(req.getParameter("requesteduri") != null){
 
 				String redirect = req.getParameter("requesteduri");
 
-				res.sendRedirect(this.getModuleURI(req) + "?redirect=" + URLEncoder.encode(redirect,"UTF-8") + "#clear");
+				res.sendRedirect(this.getModuleURI(req) + "?redirect=" + URLEncoder.encode(redirect,"ISO-8859-1") + "#clear");
 
 			} else {
 
-				res.sendRedirect(referer + "?requesteduri=" + URLEncoder.encode(redirectURI,"UTF-8") + "#" + this.moduleDescriptor.getAlias());
+				res.sendRedirect(referer + "?requesteduri=" + URLEncoder.encode(redirectURI,"ISO-8859-1") + "#" + this.moduleDescriptor.getAlias());
 			}
 
 		} else {

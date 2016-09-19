@@ -25,6 +25,11 @@
             <artifactId>flowengine</artifactId>
             <version>1.2.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.nordicpeak.flowengine</groupId>
+            <artifactId>standardflownotificationhandler</artifactId>
+            <version>1.2.1</version>
+        </dependency>
     </dependencies>
     <build>
         <sourceDirectory>src</sourceDirectory>
@@ -44,7 +49,7 @@
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
-                    <encoding>UTF-8</encoding>
+                    <encoding>LATIN1</encoding>
                 </configuration>
             </plugin>
         </plugins>

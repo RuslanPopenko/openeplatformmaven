@@ -18,7 +18,7 @@ public class JTidyUtils {
 		tidy.setShowErrors(0);
 		tidy.setQuiet(true);
 		tidy.setPrintBodyOnly(true);
-		tidy.setOutputEncoding("UTF-8");
+		tidy.setOutputEncoding("ISO-8859-1");
 		
 		StringWriter stringWriter = new StringWriter();
 		

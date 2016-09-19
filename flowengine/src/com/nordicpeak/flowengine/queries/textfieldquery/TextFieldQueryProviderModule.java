@@ -313,13 +313,13 @@ public class TextFieldQueryProviderModule extends BaseQueryProviderModule<TextFi
 
 		//Clear attributes
 		for (TextField textField : textFields) {
-
+			
 			if(textField.isSetAsAttribute()){
-
+				
 				attributeHandler.removeAttribute(textField.getAttributeName());
 			}
-		}
-
+		}		
+		
 		if (textFieldValues.isEmpty()) {
 
 			queryInstance.setValues(null);
@@ -329,12 +329,12 @@ public class TextFieldQueryProviderModule extends BaseQueryProviderModule<TextFi
 
 			queryInstance.setValues(textFieldValues);
 			queryInstance.getQueryInstanceDescriptor().setPopulated(true);
-
+			
 			//Set attributes
 			for(TextFieldValue textFieldValue : textFieldValues){
-
+				
 				if(textFieldValue.getTextField().isSetAsAttribute()){
-
+					
 					attributeHandler.setAttribute(textFieldValue.getTextField().getAttributeName(), textFieldValue.getValue());
 				}
 			}
@@ -512,13 +512,13 @@ public class TextFieldQueryProviderModule extends BaseQueryProviderModule<TextFi
 		// TODO This will be implemented later with a more sophisticated logic
 		List<FormatValidator> validators = new ArrayList<FormatValidator>();
 
-		FormatValidator validator = new FormatValidator("E-post","se.unlogic.emailutils.validation.StringEmailValidator", "Du mÃ¥ste fylla i en giltig e-post adress");
+		FormatValidator validator = new FormatValidator("E-post","se.unlogic.emailutils.validation.StringEmailValidator", "Du måste fylla i en giltig e-post adress");
 		validators.add(validator);
 
-		validator = new FormatValidator("Positivt heltal","se.unlogic.standardutils.validation.PositiveStringIntegerValidator", "Du mÃ¥ste fylla i ett positivt heltal");
+		validator = new FormatValidator("Positivt heltal","se.unlogic.standardutils.validation.PositiveStringIntegerValidator", "Du måste fylla i ett positivt heltal");
 		validators.add(validator);
 
-		validator = new FormatValidator("Personnummer","se.unlogic.standardutils.populators.SocialSecurityPopulator", "Du mÃ¥ste fylla i ett giltigt personnummer");
+		validator = new FormatValidator("Personnummer","se.unlogic.standardutils.populators.SocialSecurityPopulator", "Du måste fylla i ett giltigt personnummer");
 		validators.add(validator);
 
 		return validators;

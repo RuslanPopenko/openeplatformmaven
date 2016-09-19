@@ -73,9 +73,9 @@ public class StringUtils {
 
 	/**
 	 * Unescapes escaped HTML characters
-	 *
+	 * 
 	 * Based on a fixed set of escaped HTML characters from the latin-1 set
-	 *
+	 * 
 	 * @param sequence - the secuence of characters to unescape characters in
 	 * @return - a sequenced without escaped HTML characters
 	 */
@@ -86,10 +86,10 @@ public class StringUtils {
 
 	/**
 	 * Replaces characters in a character sequence
-	 *
+	 * 
 	 * @param sequence - the secuence of characters to replace characters in
 	 * @param characterSet - a set of key=value character mappings, e.g. &num;=#. Occurences of key, e.g. "&num;" will be replaced by value, e.g. "#"
-	 *
+	 * 
 	 * @return - a sequenced with replaced characters
 	 */
 	private static String replaceCharacters(String sequence, Properties characterSet, boolean reverse) {
@@ -325,7 +325,7 @@ public class StringUtils {
 
 	/**
 	 * Takes a string and splits it on linebreaks (\n) and also removes any linebreak (\n) and carriage return (\r) characters from the string segments
-	 *
+	 * 
 	 * @param string the string to be split
 	 * @return String array containing the split segments of the string
 	 */
@@ -417,10 +417,10 @@ public class StringUtils {
 
 	public static String replaceUTF8Quotes(String text) {
 
-		text = text.replace("Â”", "\"");
-		text = text.replace("Â“", "\"");
-		text = text.replace("Â‘", "'");
-		text = text.replace("Â’", "'");
+		text = text.replace("”", "\"");
+		text = text.replace("“", "\"");
+		text = text.replace("‘", "'");
+		text = text.replace("’", "'");
 
 		return text;
 	}
@@ -454,14 +454,14 @@ public class StringUtils {
 
 			return null;
 		}
-
+		
 		string = string.trim();
-
+		
 		if (string.length() == 0) {
-
+			
 			return null;
 		}
-
+		
 		return string;
 	}
 }

@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@CHARSET "ISO-8859-1";
 
 .oh-ui-dialog { display: none; }
 .oh-ui-dialog span.loading-icon { display: block; background-image: url(../pics/loading.gif); background-repeat: no-repeat; background-position: 100% 100%; height: 55%; width: 55%; }

@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	
 	<xsl:import href="BaseFlowModule.sv.xsl"/>
 	
 	<xsl:import href="BaseFlowBrowserModuleTemplates.xsl"/>
 	
-	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
+	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
 	
-	<xsl:variable name="i18n.FlowDisabled">Den hÃ¤r e-tjÃ¤nsten Ã¤r fÃ¶r tillfÃ¤llet inte tillgÃ¤nglig</xsl:variable>
-	<xsl:variable name="i18n.FlowNoLongerAvailable">E-tjÃ¤nsten Ã¤r inte lÃ¤ngre tillgÃ¤nglig, kontakta administratÃ¶ren fÃ¶r mer information.</xsl:variable>
-	<xsl:variable name="i18n.FlowNoLongerPublished">E-tjÃ¤nsten Ã¤r inte lÃ¤ngre publicerad i systemet, kontakta administratÃ¶ren fÃ¶r mer information.</xsl:variable>
+	<xsl:variable name="i18n.FlowDisabled">Den här e-tjänsten är för tillfället inte tillgänglig</xsl:variable>
+	<xsl:variable name="i18n.FlowNoLongerAvailable">E-tjänsten är inte längre tillgänglig, kontakta administratören för mer information.</xsl:variable>
+	<xsl:variable name="i18n.FlowNoLongerPublished">E-tjänsten är inte längre publicerad i systemet, kontakta administratören för mer information.</xsl:variable>
 	
-	<xsl:variable name="i18n.RequestedFlowNotFound">Den begÃ¤rda e-tjÃ¤nsten hittades inte.</xsl:variable>
-	<xsl:variable name="i18n.RequestedFlowInstanceNotFound">Den begÃ¤rda ansÃ¶kan hittades inte.</xsl:variable>
-	<xsl:variable name="i18n.InvalidLinkRequested">Den begÃ¤rda e-tjÃ¤nsten hittades inte.</xsl:variable>		
+	<xsl:variable name="i18n.RequestedFlowNotFound">Den begärda e-tjänsten hittades inte.</xsl:variable>
+	<xsl:variable name="i18n.RequestedFlowInstanceNotFound">Den begärda ansökan hittades inte.</xsl:variable>
+	<xsl:variable name="i18n.InvalidLinkRequested">Den begärda e-tjänsten hittades inte.</xsl:variable>		
 	
-	<xsl:variable name="i18n.FlowInstanceNoLongerAvailable">Den hÃ¤r e-tjÃ¤nsten Ã¤r inte tillgÃ¤nglig lÃ¤gre.</xsl:variable>
-	<xsl:variable name="i18n.ErrorGettingFlowInstanceManager">Ett fel uppstod nÃ¤r ansÃ¶kan skulle Ã¶ppnas.</xsl:variable>
-	<xsl:variable name="i18n.FlowInstanceErrorDataSaved">Ett fel uppstod i e-tjÃ¤nsten, din ansÃ¶kan har sparats.</xsl:variable>
-	<xsl:variable name="i18n.FlowInstanceErrorDataNotSaved">Ett fel uppstod i e-tjÃ¤nsten.</xsl:variable>
-	<xsl:variable name="i18n.FlowInstanceManagerClosed">Den hÃ¤r kopian pÃ¥ ansÃ¶kan har stÃ¤ngts.</xsl:variable>
+	<xsl:variable name="i18n.FlowInstanceNoLongerAvailable">Den här e-tjänsten är inte tillgänglig lägre.</xsl:variable>
+	<xsl:variable name="i18n.ErrorGettingFlowInstanceManager">Ett fel uppstod när ansökan skulle öppnas.</xsl:variable>
+	<xsl:variable name="i18n.FlowInstanceErrorDataSaved">Ett fel uppstod i e-tjänsten, din ansökan har sparats.</xsl:variable>
+	<xsl:variable name="i18n.FlowInstanceErrorDataNotSaved">Ett fel uppstod i e-tjänsten.</xsl:variable>
+	<xsl:variable name="i18n.FlowInstanceManagerClosed">Den här kopian på ansökan har stängts.</xsl:variable>
 	
-	<xsl:variable name="i18n.CancelFlowInstanceConfirm">Ã„r du sÃ¤ker pÃ¥ att du vill avbryta Ã¤rendet</xsl:variable>
-	<xsl:variable name="i18n.DeleteFlowInstanceConfirm">Ã„r du sÃ¤ker pÃ¥ att du vill ta bort Ã¤rendet</xsl:variable>
+	<xsl:variable name="i18n.CancelFlowInstanceConfirm">Är du säker på att du vill avbryta ärendet</xsl:variable>
+	<xsl:variable name="i18n.DeleteFlowInstanceConfirm">Är du säker på att du vill ta bort ärendet</xsl:variable>
 	
-	<xsl:variable name="i18n.overview">Ã„rendeÃ¶versikt</xsl:variable>
-	<xsl:variable name="i18n.showInstance">Visa Ã¤rende</xsl:variable>
-	<xsl:variable name="i18n.updateInstance">Ã„ndra Ã¤rende</xsl:variable>
-	<xsl:variable name="i18n.cancelInstance">Avbryt Ã¤rende</xsl:variable>
+	<xsl:variable name="i18n.overview">Ärendeöversikt</xsl:variable>
+	<xsl:variable name="i18n.showInstance">Visa ärende</xsl:variable>
+	<xsl:variable name="i18n.updateInstance">Ändra ärende</xsl:variable>
+	<xsl:variable name="i18n.cancelInstance">Avbryt ärende</xsl:variable>
 	
-	<xsl:variable name="i18n.updateStatus">Ã„ndra status</xsl:variable>
-	<xsl:variable name="i18n.updateManagers">Ã„ndra handlÃ¤ggare</xsl:variable>
-	<xsl:variable name="i18n.deleteInstance">Ta bort Ã¤rende</xsl:variable>
-	<xsl:variable name="i18n.bookmarkInstance">Flagga Ã¤rende</xsl:variable>
+	<xsl:variable name="i18n.updateStatus">Ändra status</xsl:variable>
+	<xsl:variable name="i18n.updateManagers">Ändra handläggare</xsl:variable>
+	<xsl:variable name="i18n.deleteInstance">Ta bort ärende</xsl:variable>
+	<xsl:variable name="i18n.bookmarkInstance">Flagga ärende</xsl:variable>
 </xsl:stylesheet>

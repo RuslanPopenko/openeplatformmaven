@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 
 	<xsl:include href="../../core/utils/xsl/Common.xsl"/>
 	
@@ -863,7 +863,7 @@
 						    				<input type="hidden" name="viewComments" />	
 							    			<xsl:choose>
 								    			<xsl:when test="comments/showAll">
-								    					<a href="javascript:viewComments('false')" title="DÃ¶lj kommentarer"><xsl:value-of select="$i18n.gallery.file.hide.comments"/></a>
+								    					<a href="javascript:viewComments('false')" title="Dölj kommentarer"><xsl:value-of select="$i18n.gallery.file.hide.comments"/></a>
 								    			</xsl:when>
 								    			<xsl:otherwise>
 									    				<a href="javascript:viewComments('true')" title="Visa alla kommentarer"><xsl:value-of select="$i18n.gallery.file.show.comments"/></a>

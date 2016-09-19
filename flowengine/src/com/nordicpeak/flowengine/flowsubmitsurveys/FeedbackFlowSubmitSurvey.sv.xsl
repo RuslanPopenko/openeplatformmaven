@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output encoding="UTF-8" method="html" version="4.0"/>
+	<xsl:output encoding="ISO-8859-1" method="html" version="4.0"/>
 
 	<xsl:include href="FeedbackFlowSubmitSurveyTemplates.xsl"/>
 	
-	<xsl:variable name="java.chartDataTitle">Hur nÃ¶jd Ã¤r du med din upplevelse av tjÃ¤nsten?</xsl:variable>
+	<xsl:variable name="java.chartDataTitle">Hur nöjd är du med din upplevelse av tjänsten?</xsl:variable>
 	
-	<xsl:variable name="i18n.FeedbackSurveyTitle">Hur nÃ¶jd Ã¤r du med din upplevelse av tjÃ¤nsten</xsl:variable>
-	<xsl:variable name="i18n.VeryDissatisfied">Mycket missnÃ¶jd</xsl:variable>
-	<xsl:variable name="i18n.Dissatisfied">MissnÃ¶jd</xsl:variable>
+	<xsl:variable name="i18n.FeedbackSurveyTitle">Hur nöjd är du med din upplevelse av tjänsten</xsl:variable>
+	<xsl:variable name="i18n.VeryDissatisfied">Mycket missnöjd</xsl:variable>
+	<xsl:variable name="i18n.Dissatisfied">Missnöjd</xsl:variable>
 	<xsl:variable name="i18n.Neither">Varken eller</xsl:variable>
-	<xsl:variable name="i18n.Satisfied">NÃ¶jd</xsl:variable>
-	<xsl:variable name="i18n.VerySatisfied">Mycket nÃ¶jd</xsl:variable>
-	<xsl:variable name="i18n.Unkown">OkÃ¤nt</xsl:variable>
-	<xsl:variable name="i18n.LeaveComment">LÃ¤mna en kommentar</xsl:variable>
+	<xsl:variable name="i18n.Satisfied">Nöjd</xsl:variable>
+	<xsl:variable name="i18n.VerySatisfied">Mycket nöjd</xsl:variable>
+	<xsl:variable name="i18n.Unkown">Okänt</xsl:variable>
+	<xsl:variable name="i18n.LeaveComment">Lämna en kommentar</xsl:variable>
 	<xsl:variable name="i18n.Comment">Kommentar</xsl:variable>
 	<xsl:variable name="i18n.Send">Skicka</xsl:variable>
-	<xsl:variable name="i18n.CommentPlaceHolder">LÃ¤mna gÃ¤rna en kommentar till ditt betyg</xsl:variable>
-	<xsl:variable name="i18n.FeedbackSurveySuccess">Ditt betyg Ã¤r registrerat, tack fÃ¶r din medverkan</xsl:variable>
-	<xsl:variable name="i18n.NoAnswer">Du mÃ¥ste vÃ¤lja ett betyg fÃ¶r att kunna skicka in</xsl:variable>
+	<xsl:variable name="i18n.CommentPlaceHolder">Lämna gärna en kommentar till ditt betyg</xsl:variable>
+	<xsl:variable name="i18n.FeedbackSurveySuccess">Ditt betyg är registrerat, tack för din medverkan</xsl:variable>
+	<xsl:variable name="i18n.NoAnswer">Du måste välja ett betyg för att kunna skicka in</xsl:variable>
 	<xsl:variable name="i18n.ShowComments">Visa betyg med kommentarer</xsl:variable>
-	<xsl:variable name="i18n.HideComments">DÃ¶lj betyg med kommentarer</xsl:variable>
+	<xsl:variable name="i18n.HideComments">Dölj betyg med kommentarer</xsl:variable>
 	<xsl:variable name="i18n.Answer">Betyg</xsl:variable>
 	
-	<xsl:variable name="i18n.NoFlowFeedbackSurveys">Den hÃ¤r versionen av e-tjÃ¤nsten har Ã¤nnu inga betyg</xsl:variable>
+	<xsl:variable name="i18n.NoFlowFeedbackSurveys">Den här versionen av e-tjänsten har ännu inga betyg</xsl:variable>
 
-	<xsl:variable name="i18n.validationError.RequiredField">Du mÃ¥ste fylla i fÃ¤ltet</xsl:variable>
-	<xsl:variable name="i18n.validationError.InvalidFormat">Felaktigt format pÃ¥ fÃ¤ltet</xsl:variable>
-	<xsl:variable name="i18n.validationError.TooLong">FÃ¶r lÃ¥ngt vÃ¤rde pÃ¥ fÃ¤ltet</xsl:variable>
-	<xsl:variable name="i18n.validationError.TooShort">FÃ¶r kort vÃ¤rde pÃ¥ fÃ¤ltet</xsl:variable>
-	<xsl:variable name="i18n.validationError.Other">Ett okÃ¤nt fel</xsl:variable>
-	<xsl:variable name="i18n.validationError.unknownValidationErrorType">Ett okÃ¤nt fel har uppstÃ¥tt</xsl:variable>
-	<xsl:variable name="i18n.validationError.unknownMessageKey">Ett okÃ¤nt fel har uppstÃ¥tt</xsl:variable>
+	<xsl:variable name="i18n.validationError.RequiredField">Du måste fylla i fältet</xsl:variable>
+	<xsl:variable name="i18n.validationError.InvalidFormat">Felaktigt format på fältet</xsl:variable>
+	<xsl:variable name="i18n.validationError.TooLong">För långt värde på fältet</xsl:variable>
+	<xsl:variable name="i18n.validationError.TooShort">För kort värde på fältet</xsl:variable>
+	<xsl:variable name="i18n.validationError.Other">Ett okänt fel</xsl:variable>
+	<xsl:variable name="i18n.validationError.unknownValidationErrorType">Ett okänt fel har uppstått</xsl:variable>
+	<xsl:variable name="i18n.validationError.unknownMessageKey">Ett okänt fel har uppstått</xsl:variable>
 
 </xsl:stylesheet>

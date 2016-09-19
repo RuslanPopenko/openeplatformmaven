@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8"/>
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1"/>
 
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/xsl/Common.xsl"/>
 
@@ -85,7 +85,7 @@
   						<thead>
   							<tr>
   								<th class="icon"></th>
-  								<th class="errando"><span>Ã„rendenummer</span></th>
+  								<th class="errando"><span>Ärendenummer</span></th>
   								<th class="status"><span>Meddelande</span></th>
   								<th class="link"></th>
   							</tr>
@@ -645,7 +645,7 @@
 							<xsl:with-param name="user" select="poster" />
 						</xsl:call-template>
 					</i>
-				 	<span class="time"><xsl:text>&#160;Â·&#160;</xsl:text><xsl:value-of select="added" /></span>
+				 	<span class="time"><xsl:text>&#160;·&#160;</xsl:text><xsl:value-of select="added" /></span>
 				 </span>
 				 <xsl:if test="attachments/ExternalMessageAttachment">
 					<div class="files">

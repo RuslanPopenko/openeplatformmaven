@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8" />
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" />
 
 	<xsl:include href="MenuAdminModuleTemplates.xsl" />
 	
@@ -8,11 +8,11 @@
 	
 	<!-- Naming template.mode.field.type -->
 	
-	 <xsl:variable name="expandAll" select="'FÃ¤ll ut alla'" />
-	 <xsl:variable name="collapseAll" select="'StÃ¤ng alla'" />
-	 <xsl:variable name="addMenuInSection" select="'LÃ¤gg till menyalternativ i sektionen'" />
+	 <xsl:variable name="expandAll" select="'Fäll ut alla'" />
+	 <xsl:variable name="collapseAll" select="'Stäng alla'" />
+	 <xsl:variable name="addMenuInSection" select="'Lägg till menyalternativ i sektionen'" />
 	 <xsl:variable name="moveMenu" select="'Flytta menyalternativ'"/>
-	 <xsl:variable name="moveMenuInstruction" select="'Klicka pÃ¥ den sektion som du vill flytta menyalternativet till'"/>
+	 <xsl:variable name="moveMenuInstruction" select="'Klicka på den sektion som du vill flytta menyalternativet till'"/>
 	 <xsl:variable name="editMenu" select="'Redigera menyalternativ'"/>
 	 <xsl:variable name="removeMenu" select="'Ta bort menyalternativ'"/>
 	 <xsl:variable name="name" select="'Namn'"/>
@@ -27,37 +27,37 @@
 	 <xsl:variable name="address" select="'Adress'"/>
 	 <xsl:variable name="sortMenuInSection" select="'Sortering av meny i sektionen'"/>
 	 <xsl:variable name="noMenuesFound" select="'Inga menyalternativ hittades'"/>
-	 <xsl:variable name="visibleTo" select="'Synlig fÃ¶r'"/>
-	 <xsl:variable name="link" select="'LÃ¤nk'"/>
-	 <xsl:variable name="thisSectionIsNotStarted" select="'Den hÃ¤r sektionen Ã¤r inte startad!'"/>
+	 <xsl:variable name="visibleTo" select="'Synlig för'"/>
+	 <xsl:variable name="link" select="'Länk'"/>
+	 <xsl:variable name="thisSectionIsNotStarted" select="'Den här sektionen är inte startad!'"/>
 	 <xsl:variable name="toAnotherSection" select="'till en annan sektion'"/>
 	 <xsl:variable name="theModule" select="'Modulen'"/>
 	 <xsl:variable name="theSection" select="'Sektionen'"/>
 	 <xsl:variable name="theBundle" select="'Bundeln'"/>
-	 <xsl:variable name="fromModule" select="'frÃ¥n modulen'"/>
-	 <xsl:variable name="unknown" select="'OkÃ¤nt'"/>
-	 <xsl:variable name="source" select="'KÃ¤lla'"/>
-	 <xsl:variable name="phrase1" select="'Beskriver vart menyalternativet hÃ¤rstammar ifrÃ¥n'"/>
+	 <xsl:variable name="fromModule" select="'från modulen'"/>
+	 <xsl:variable name="unknown" select="'Okänt'"/>
+	 <xsl:variable name="source" select="'Källa'"/>
+	 <xsl:variable name="phrase1" select="'Beskriver vart menyalternativet härstammar ifrån'"/>
 	 <xsl:variable name="phrase2" select="'Adressen som menyalternativet pekar till'"/>
 	 <xsl:variable name="menu" select="'Menyalternativ'"/>
 	 <xsl:variable name="phrase3" select="'Menyalternativ i bundlen'"/>
-	 <xsl:variable name="access" select="'Ã…tkomst'"/>
-	 <xsl:variable name="admins" select="'AdministratÃ¶rer'"/>
-	 <xsl:variable name="loggedInUsers" select="'Inloggade anvÃ¤ndare'"/>
-	 <xsl:variable name="nonLoggedInUsers" select="'Ej inloggade anvÃ¤ndare'"/>
+	 <xsl:variable name="access" select="'Åtkomst'"/>
+	 <xsl:variable name="admins" select="'Administratörer'"/>
+	 <xsl:variable name="loggedInUsers" select="'Inloggade användare'"/>
+	 <xsl:variable name="nonLoggedInUsers" select="'Ej inloggade användare'"/>
 	
-	 <xsl:variable name="validationError.requiredField" select="'Du mÃ¥ste fylla i fÃ¤ltet'"/>
-	 <xsl:variable name="validationError.invalidFormat" select="'Felaktigt format pÃ¥ fÃ¤ltet'"/>
-	 <xsl:variable name="validationError.unknown" select="'OkÃ¤nt fel pÃ¥ fÃ¤ltet'"/>
-	 <xsl:variable name="validationError.tooLong">FÃ¶r lÃ¥ngt vÃ¤rde i fÃ¤ltet</xsl:variable>
+	 <xsl:variable name="validationError.requiredField" select="'Du måste fylla i fältet'"/>
+	 <xsl:variable name="validationError.invalidFormat" select="'Felaktigt format på fältet'"/>
+	 <xsl:variable name="validationError.unknown" select="'Okänt fel på fältet'"/>
+	 <xsl:variable name="validationError.tooLong">För långt värde i fältet</xsl:variable>
 	 
-	 <xsl:variable name="validationError.duplicateAlias" select="'Det finns redan ett menyalternativ med detta alias i den hÃ¤r sektion!'"/>
-	 <xsl:variable name="validationError.unknownErrorOccurred" select="'Ett okÃ¤nt fel har intrÃ¤ffat'"/>
+	 <xsl:variable name="validationError.duplicateAlias" select="'Det finns redan ett menyalternativ med detta alias i den här sektion!'"/>
+	 <xsl:variable name="validationError.unknownErrorOccurred" select="'Ett okänt fel har inträffat'"/>
 	
-	 <xsl:variable name="add" select="'LÃ¤gg till'"/>
-	 <xsl:variable name="users" select="'AnvÃ¤ndare'"/>
+	 <xsl:variable name="add" select="'Lägg till'"/>
+	 <xsl:variable name="users" select="'Användare'"/>
 	 <xsl:variable name="groups" select="'Grupper'"/>
 	 <xsl:variable name="inSection" select="'in section'"/>
-	 <xsl:variable name="saveChanges" select="'Spara Ã¤ndringar'"/>
+	 <xsl:variable name="saveChanges" select="'Spara ändringar'"/>
 	
 </xsl:stylesheet>

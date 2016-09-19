@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="ISO-8859-1" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-	<xsl:output method="html" version="4.0" encoding="UTF-8" />
+	<xsl:output method="html" version="4.0" encoding="ISO-8859-1" />
 
 	<xsl:include href="classpath://se/unlogic/hierarchy/core/utils/xsl/Common.xsl"/>
 
@@ -163,7 +163,7 @@
 		</xsl:call-template>
 		
 		<select name="year" class="marginright" style="width: 140px; height: 32px">
-			<option value="">Giltigt Ã¥r</option>
+			<option value="">Giltigt år</option>
 			<option value="2015">2015</option>
 			<option value="2016">2016</option>
 			<option value="2017">2017</option>
@@ -171,7 +171,7 @@
 		</select>
 		
 		<select name="month" style="width: 175px; height: 32px">
-			<option value="">Giltigt mÃ¥nad</option>
+			<option value="">Giltigt månad</option>
 			<option value="1">01</option>
 			<option value="2">02</option>
 			<option value="3">03</option>
